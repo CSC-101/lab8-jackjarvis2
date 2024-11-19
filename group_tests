@@ -1,0 +1,9 @@
+import unittest
+import group   # assuming the function is defined in group.py
+
+class TestGroupsOf3(unittest.TestCase):
+
+    def test_groups_of_3_1(self):
+        self.assertEqual(group.groups_of_3([1, 2, 3, 4, 5, 6, 7, 8, 9]), [[1, 2, 3], [4, 5, 6], [7, 8, 9]])
+    def test_groups_of_3_2(self):
+        self.assertEqual(group.groups_of_3([1, 2, 3, 4, 5, 6, 7, 8]), [[1, 2, 3], [4, 5, 6], [7, 8]])
